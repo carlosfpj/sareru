@@ -3,7 +3,7 @@
     <head>
         <title>Sareru</title>
         <link rel="stylesheet" href="css/sareru.css">
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
     </head>
 <body>
     <section id="header" class="header">
@@ -38,7 +38,13 @@
         <input type="text" required id="tel" name="tel">
 
         <label for="email">E-mail:</label>
-        <input type="email" required id="email" name="email">
+        <input type="text" required id="email" name="email">
+
+        <label for="tipo">Elige qué deseas ser</label>
+        <select name="tipo">
+            <option value="viajero">Viajero</option>
+            <option value="comprador">Comprador</option>
+        </select>
 
         <input type="submit" value="Inscribirse">
     </form>
