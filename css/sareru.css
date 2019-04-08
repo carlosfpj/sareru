@@ -2,3 +2,44 @@ body {
     margin: 0px;
 }
 
+.contenedor {
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+header { 
+    position: relative;
+}
+
+.menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: red;
+}
+
+.menu ul {
+    display: inline-block;
+}
+
+.logotipo {
+    display: inline-block;
+    margin-left: 0;
+}
+
+.menu li {
+    list-style-type: none;
+    font-size: 25px;
+    line-height: 80px;
+}
+
+.portada {
+    height: 500px;
+    padding: 20px;
+    background-color: black;
+}
