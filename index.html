@@ -4,6 +4,7 @@
         <title>Sareru</title>
         <link rel="stylesheet" href="css/sareru.css">
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
 <body>
     <section id="portada" class="portada background">
@@ -30,25 +31,33 @@
             </nav>
         </header>
     </section>
-    <form action="form.php" class="formulario" method="POST">
+    <form action="form.php" class="contenedor" method="POST">
         <label>REGISTRATE CON NOSOTROS</label>
         <br>
-        <label for="nombre">Nombre:</label>
-        <input type="text" required id="nombre" name="nombre">
-
-        <label for="tel">Número celular:</label>
-        <input type="text" required id="tel" name="tel">
-
-        <label for="email">E-mail:</label>
-        <input type="text" required id="email" name="email">
-
-        <label for="tipo">Elige qué deseas ser</label>
-        <select name="tipo">
-            <option value="viajero">Viajero</option>
-            <option value="comprador">Comprador</option>
-        </select>
-
-        <input type="submit" value="Inscribirse">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" name="nombre" placeholder="NOMBRE">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="tel">Número celular:</label>
+                <input type="text" class="form-control" name="tel" placeholder="Número celular">
+            </div>    
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                 <label for="email">E-mail:</label>
+                 <input type="text" class="form-control" name="email" placeholder="E-MAIL">
+            </div>
+            <div class="form-group col-md-6">
+                    <label for="tipo">Elige qué deseas ser</label>
+                    <select name="tipo" class="form-control">
+                        <option value="viajero">Viajero</option>
+                        <option value="comprador">Comprador</option>
+                    </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Registrate</button>
     </form>
 </body>
 </html>
