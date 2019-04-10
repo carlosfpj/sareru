@@ -41,6 +41,5 @@ if($tipo=="comprador") {
         echo "conexión incorrecta: " . $th->getMessage();
     }
 }
-
 $conn = null;
 ?>
