@@ -5,9 +5,6 @@
         <link rel="stylesheet" href="css/sareru.css">
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
 <body>
       <!-- Modal -->
@@ -54,7 +51,7 @@
             </nav>
         </header>
     </section>
-    <form action="form.php" class="form contenedor" method="POST">
+    <form action="form.php" class="form contenedor" id="form-sub" method="POST">
         <label>REGISTRATE CON NOSOTROS</label>
         <br>
         <div class="form-row">
@@ -82,22 +79,43 @@
         </div>
         <button type="submit" class="btn btn-primary">Regístrate</button>
     </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
     <script>
-        function formUpt() { 
-            $('form').on('submit',function(e){
-                e.stopPropagation();
+        
+        function formUpt() {
+
+            $('#form-sub').on('submit', function(e) {
+
+                e.preventDefault();
+
                 $.ajax({
+
                     method: "POST",
                     url: "form.php",
-                    data: $('form').serialize()
-                })
-                .done(function(msg){
-                    alert("Datos Registrados");
+                    data: $('form').serialize(),
+                    success: function(response) {
+                        alert('holasd');
+                        return false;
+                    }
+
                 });
+
                 return false;
-            }) 
+
+            });
+
+            return false;
+
         }
-        window.onload = formUpt();
+
+        $(document).ready(function() {
+            formUpt();
+        });
+        
     </script>
+    
 </body>
 </html>
