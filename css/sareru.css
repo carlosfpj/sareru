@@ -2,25 +2,36 @@ body {
     margin: 0px;
 }
 
+.background {
+    background-color:#F3754E;
+}
+
 .contenedor {
-    width: 800px;
+    width: 950px;
     margin: auto;
     position: relative;
 }
 
-header { 
+.contenedorheader {
     position: relative;
+    background-color: white;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu {
     display: inline-block;
     position: absolute;
     right: 0;
+    top: 50px;
 }
 
 .menu a {
     text-decoration: none;
-    color: red;
+    color:#0D3E66;
 }
 
 .menu ul {
@@ -29,7 +40,6 @@ header {
 
 .logotipo {
     display: inline-block;
-    margin-left: 0;
 }
 
 .menu li {
@@ -39,7 +49,5 @@ header {
 }
 
 .portada {
-    height: 500px;
-    padding: 20px;
-    background-color: black;
+    height: 700px;
 }
