@@ -3,9 +3,17 @@ body {
     font-family: 'Roboto', serif;
 }
 
-/*label {
+label {
     font-weight: bold;
-}*/
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    margin-bottom: 0;
+}
 
 .background {
     background: #F3754E;    
@@ -16,15 +24,9 @@ body {
 }
 
 .contenedor {
-    width: 1050px;
+    width: 1150px;
     margin: auto;
     position: relative;
-}
-
-.contenedorform {
-    width: 1050px;
-    margin: auto;
-    padding-top: 60px;
 }
 
 .contenedorheader {
@@ -32,10 +34,14 @@ body {
     background-color: white;
 }
 
-/*.form-row {
+.form {
+    margin-top: 25px;
+}
+
+.form-row {
     margin-top: 20px;
-    margin-bottom: 50px;
-}*/
+    margin-bottom: 25px;
+}
 
 .footer {
     background: #0D3E66;
@@ -72,17 +78,21 @@ body {
     line-height: 80px;
 }
 
-/*.label {
+.label {
     margin-bottom: 30px;
     display: block;
     text-align: center;
-}*/
+}
 
-/*.labelForm {
+.labelForm {
     font-size: 65px;
     margin-bottom: 0;
     color: #0D3E66;
-}*/
+}
+
+.operacion {
+    margin-top: 20px;
+}
 
 .portada {
     height: 700px;
