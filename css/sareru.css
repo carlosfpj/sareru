@@ -34,6 +34,28 @@ ul {
     background-color: white;
 }
 
+.footer {
+    background: white;
+    height: 200px;
+}
+
+.footer-logo {
+    display: inline-block;
+}
+
+.footer-space {
+    display: block;
+}
+
+.footer-social-icons{
+    display: inline-block;
+}
+
+.footer-social-icons-span {
+    display: flex;
+    justify-content: space-between
+}
+
 .form {
     margin-top: 25px;
 }
@@ -41,10 +63,6 @@ ul {
 .form-row {
     margin-top: 20px;
     margin-bottom: 25px;
-}
-
-.footer {
-    background: #0D3E66;
 }
 
 .header { 
