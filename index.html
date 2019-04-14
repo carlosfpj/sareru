@@ -2,9 +2,10 @@
 <html>
     <head>
         <title>Sareru</title>
-        <link rel="stylesheet" href="css/sareru.css">
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/sareru.css">
     </head>
 <body>
       <!-- Modal -->
@@ -45,7 +46,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <a href="index.html">Cómo operamos?</a>
+                        <a href="#operacion">Cómo operamos?</a>
                     </li>
                 </ul>
             </nav>
@@ -55,39 +56,40 @@
             <h3 class="sub-titulo">Sub-título</h3>
         </div>
     </section>
-    <form action="form.php" class="form contenedor" id="form-sub" method="POST">
-        <label>REGISTRATE CON NOSOTROS</label>
-        <br>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" name="nombre" placeholder="NOMBRE">
+    <!--<section id="formulario" class="contenedorform">-->
+        <form action="form.php" class="form" id="form-sub" method="POST">
+            <div class="label">
+                <label class="labelForm">REGÍSTRATE</label>
             </div>
-            <div class="form-group col-md-6">
-                <label for="tel">Número celular:</label>
-                <input type="text" class="form-control" name="tel" placeholder="Número celular">
-            </div>    
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                 <label for="email">E-mail:</label>
-                 <input type="text" class="form-control" name="email" placeholder="E-MAIL">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" name="nombre" placeholder="Escribe tu nombre aquí">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="tel">Número celular:</label>
+                    <input type="text" class="form-control" name="tel" placeholder="Escribe tu número celular aquí">
+                </div>    
             </div>
-            <div class="form-group col-md-6">
-                    <label for="tipo">Elige qué deseas ser</label>
-                    <select name="tipo" class="form-control">
-                        <option value="viajero">Viajero</option>
-                        <option value="comprador">Comprador</option>
-                    </select>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Regístrate</button>
-    </form>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-    <script>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">E-mail:</label>
+                    <input type="text" class="form-control" name="email" placeholder="Escribe tu e-mail aquí">
+                </div>
+                <div class="form-group col-md-6">
+                        <label for="tipo">Elige qué deseas ser</label>
+                        <select name="tipo" class="form-control">
+                            <option value="viajero">Viajero</option>
+                            <option value="comprador">Comprador</option>
+                        </select>
+                </div>
+            </div> 
+            <button type="submit" class="btn btn-primary">Regístrate</button>   
+        </form>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+         <script>
         
         function formUpt() {
 
@@ -119,7 +121,34 @@
             formUpt();
         });
         
-    </script>
+        </script>  
+    <!--</section>-->
+    <section id="operacion" class="operacion background contenedor">
+        <div class="">
+            <li>
+                <ul>
+                    <p>LORE IPSUM</p>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <p>LOREM IPSUM</p>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <p>LOREM IPSUM</p>
+                </ul>
+            </li>
+        </div>
+
+    </section>
+    <section class="" id="">
+        <footer class="footer">
+            <img src="images/sareru300px.png" width="200" height="200">
+        </footer>
+    </section>
+    
     
 </body>
 </html>
