@@ -90,6 +90,31 @@ ul {
     display: inline-block;
 }
 
+.media-title {
+    color: white;
+    text-align: center;
+}
+
+.media-up-step1 {
+    display: flex;
+    align-items: center;
+}
+
+.media-up-step2 {
+    display: flex;
+    align-items: center;
+}
+
+.media-up-step3 {
+    display: flex;
+    align-items: center;
+}
+
+.media-up-step4 {
+    display: flex;
+    align-items: center;
+}
+
 .menu li {
     list-style-type: none;
     font-size: 25px;
@@ -110,8 +135,21 @@ ul {
 
 .operacion {
     margin-top: 20px;
+    background: #0D3E66;
 }
 
 .portada {
     height: 700px;
+}
+
+.step1-2 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.step3-4 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
