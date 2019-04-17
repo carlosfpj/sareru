@@ -57,7 +57,7 @@ ul {
     justify-content: space-between;
     width: 600px;
     margin: auto;
-    padding: 60px;
+    padding: 0 0 0 200px;
 }
 
 .form {
