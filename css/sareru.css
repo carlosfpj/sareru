@@ -50,12 +50,14 @@ ul {
 
 .footer-social-icons{
     width: 100%;
-    display: flex;
 }
 
 .footer-social-icons-span {
     display: flex;
     justify-content: space-between;
+    width: 600px;
+    margin: auto;
+    padding: 60px;
 }
 
 .form {
