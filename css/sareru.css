@@ -50,14 +50,13 @@ ul {
 
 .footer-social-icons{
     width: 100%;
+    margin-left: 400px;
 }
 
 .footer-social-icons-span {
     display: flex;
-    justify-content: space-between;
-    width: 600px;
+    justify-content: space-around;
     margin: auto;
-    padding: 0 0 0 200px;
 }
 
 .form {
@@ -72,16 +71,18 @@ ul {
 .header { 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.menu {
+/*.menu {
     display: inline-block;
     position: absolute;
     right: 20px;
     top: 50px;
-}
+}*/
 
 .menu a {
+    font-size: 30px;
     text-decoration: none;
     color:#0D3E66;
 }
@@ -138,6 +139,7 @@ ul {
 }
 
 .operacion {
+    padding-top: 40px;
     margin-top: 20px;
     background: #0D3E66;
 }
