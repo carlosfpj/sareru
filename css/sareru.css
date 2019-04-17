@@ -45,17 +45,17 @@ ul {
 
 .footer-space {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .footer-social-icons{
-    display: inline-block;
+    width: 100%;
+    display: flex;
 }
 
 .footer-social-icons-span {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .form {
