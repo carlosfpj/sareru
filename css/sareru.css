@@ -159,3 +159,13 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+
+.titulo {
+    text-align: center;
+    font-size: 65px;
+    padding: 30px 0;
+}
+
+.we {
+    color: #0D3E66;
+}
