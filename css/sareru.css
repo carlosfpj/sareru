@@ -24,7 +24,7 @@ ul {
 }
 
 .contenedor {
-    width: 1150px;
+    width: 1200px;
     margin: auto;
     position: relative;
 }
@@ -98,6 +98,7 @@ ul {
 .media-title {
     color: white;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .media-up-step1 {
@@ -147,6 +148,23 @@ ul {
 .portada {
     height: 500px;
 }
+
+.step1 {
+    width: 45%;
+}
+
+.step2 {
+    width: 45%;
+}
+
+.step3 {
+    width: 45%;
+}
+
+.step4 {
+    width: 45%;
+}
+
 
 .step1-2 {
     color: white;
