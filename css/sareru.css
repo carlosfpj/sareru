@@ -101,22 +101,20 @@ ul {
     margin-bottom: 30px;
 }
 
-.media-up-step1 {
-    display: flex;
-    align-items: center;
+.media-down {
+    margin-top: 10px;
 }
 
-.media-up-step2 {
-    display: flex;
-    align-items: center;
+.media-down > p {
+    color: #F3754E;
 }
 
-.media-up-step3 {
-    display: flex;
-    align-items: center;
+.media-image {
+    width: 75px;
+    margin-right: 10px;
 }
 
-.media-up-step4 {
+.media-up {
     display: flex;
     align-items: center;
 }
@@ -140,7 +138,7 @@ ul {
 }
 
 .operacion {
-    padding-top: 40px;
+    padding: 40px 0 40px;
     margin-top: 20px;
     background: #0D3E66;
 }
@@ -170,12 +168,16 @@ ul {
     color: white;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
+    font-size: 25px;
 }
 
 .step3-4 {
     color: white;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
+    font-size: 25px;
 }
 
 .titulo {
