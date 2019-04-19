@@ -19,8 +19,10 @@ ul {
     background: #F3754E;    
 }
 
-.btn-submit {
-    color: #0D3E66;
+.btn-primary {
+    background-color: #0D3E66;
+    color: white;
+    
 }
 
 .contenedor {
@@ -50,7 +52,7 @@ ul {
 
 .footer-social-icons{
     width: 100%;
-    margin-left: 400px;
+    margin-left: 600px;
 }
 
 .footer-social-icons-span {
@@ -73,13 +75,6 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
-
-/*.menu {
-    display: inline-block;
-    position: absolute;
-    right: 20px;
-    top: 50px;
-}*/
 
 .menu a {
     font-size: 30px;
@@ -107,6 +102,7 @@ ul {
 
 .media-down > p {
     color: #F3754E;
+    font-style: italic;
 }
 
 .media-image {
@@ -117,6 +113,10 @@ ul {
 .media-up {
     display: flex;
     align-items: center;
+}
+
+.media-up > p {
+    font-weight: bold;
 }
 
 .menu li {
