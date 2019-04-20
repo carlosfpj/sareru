@@ -1,3 +1,49 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?enay6r');
+    src:  url('../fonts/icomoon.eot?enay6r#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?enay6r') format('truetype'),
+      url('../fonts/icomoon.woff?enay6r') format('woff'),
+      url('../fonts/icomoon.svg?enay6r#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-instagram:before {
+    content: "\e900";
+    color: #e4405f;
+  }
+  .icon-facebook:before {
+    content: "\e902";
+    color: #3b5998;
+  }
+  .icon-whatsapp:before {
+    content: "\e901";
+    color: #25d366;
+  }
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  .icon-cancel:before {
+    content: "\ea0d";
+  }
+
+/*My code*/
 body {
     margin: 0px;
     font-family: 'Roboto', serif;
@@ -76,6 +122,12 @@ ul {
     align-items: center;
 }
 
+/*.headerImg {
+    background-image: url('../images/sareru300px.png');
+    width: 100px;
+    height: 100px;
+}*/
+
 .menu a {
     font-size: 30px;
     text-decoration: none;
@@ -144,7 +196,8 @@ ul {
 }
 
 .portada {
-    height: 500px;
+    height: auto;
+    padding-bottom: 10vh;
 }
 
 .step1 {
@@ -191,7 +244,24 @@ ul {
 }
 
 @media screen and (max-width: 320px) {
-    body {
-        background-color: red;
-    }
+   .header {
+       flex-direction: column;
+       align-items: center;
+       width: 320px;
+       height: auto;
+   }
+
+   .logotipo {
+       margin-bottom: 0;
+   }
+
+   .logotipo img {
+       width: 250px;
+       height: auto;
+   }
+
+   .portada {
+        width: 320px;
+        height: 100vh;
+   }
 }
