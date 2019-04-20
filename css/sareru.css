@@ -26,7 +26,7 @@ ul {
 }
 
 .contenedor {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     position: relative;
 }
@@ -188,4 +188,10 @@ ul {
 
 .we {
     color: #0D3E66;
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        background-color: red;
+    }
 }
