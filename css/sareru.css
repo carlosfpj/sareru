@@ -262,24 +262,31 @@ ul {
         left: 0;
         right: 0;
         bottom: 0;
-        display: block;
+        display: flex;
+        align-items: center;
         text-align: center;
         z-index: 2;
         background: rgba(13, 62, 102, .7);
     }
 
     .menu a {
-        font-size: 30px;
+        font-size: 40px;
         text-decoration: none;
         color: white;
     }
 
     .menu li {
         display: block;
+        border-bottom: 1px solid white;
+    }
+
+    .menu li:first-child {
+        border-top: 1px solid white;
     }
 
     .menu ul {
         padding: 0;
+        flex: 1;
         display: block;
     }
     
