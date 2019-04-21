@@ -79,6 +79,7 @@ ul {
 .menu a {
     font-size: 30px;
     text-decoration: none;
+    line-height: 80px;
     color:#0D3E66;
 }
 
@@ -122,8 +123,6 @@ ul {
 
 .menu li {
     list-style-type: none;
-    font-size: 25px;
-    line-height: 80px;
 }
 
 .label {
@@ -198,14 +197,38 @@ ul {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
-    
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .menu a {
+        font-size: 23px;
+        line-height: 40px;
+    }
+
+    .menu ul {
+        padding-inline-start: 0;
+        margin: 0 10px;
+    }
+
+    .logotipo { 
+        margin: 0;
+    }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .header {
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
     }
 
@@ -213,10 +236,14 @@ ul {
         display: flex;
         flex-direction: column;
     }
+
+    .menu a {
+        line-height: 50px;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1020px) {
     .menu {
         display: block;
     }
