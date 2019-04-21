@@ -72,9 +72,6 @@ ul {
 }
 
 .burger-button {
-    display: inline-block;
-    position: absolute;
-    left: 0;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -256,52 +253,11 @@ ul {
 }
 
 @media screen and (max-width: 320px) {
-    .contenedor {
-        position: static;
-    }
-   
-    .header {
-       position: static;
+   .header {
        flex-direction: column;
        align-items: center;
        width: 320px;
        height: auto;
-   }
-
-   .menu {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       position: absolute;
-       top: 0;
-       left: 0;
-       bottom: 0;
-       right: 0;
-       background: rgba(13, 62, 102, .8);
-       z-index: 2;
-   }
-
-   .menu a {
-       font-size: 20px;
-       text-decoration: none;
-       color: white;
-   }
-
-   .menu li {
-       line-height: 0;
-       padding: 20px 0;
-       border-bottom: 1px solid white;
-   }
-
-   .menu li::before {
-       display: none;
-   }
-
-   .menu ul {
-       display: block;
-       width: 100%;
-       text-align: center;
-       padding: 0;
    }
 
    .logotipo {
@@ -318,49 +274,3 @@ ul {
         height: 100vh;
    }
 }
-
-@media screen and (min-width: 375px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        width: 375px;
-        height: auto;
-    }
- 
-    .logotipo {
-        margin-bottom: 0;
-    }
- 
-    .logotipo img {
-        width: 250px;
-        height: auto;
-    }
- 
-    .portada {
-         width: 375px;
-         height: 100vh;
-    }
- }
-
- @media screen and (min-width: 425px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        width: 425px;
-        height: auto;
-    }
- 
-    .logotipo {
-        margin-bottom: 0;
-    }
- 
-    .logotipo img {
-        width: 250px;
-        height: auto;
-    }
- 
-    .portada {
-         width: 425px;
-         height: 100vh;
-    }
- }
