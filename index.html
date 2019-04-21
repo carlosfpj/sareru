@@ -35,9 +35,8 @@
     <section id="portada">
         <header id="header" class="header contenedor">
             <figure class="logotipo">
-                <img class="headerImg" alt="sarerubrand" src="images/sareru300px.png" width="300" height="300" alt="sarerubrand">
+                <img src="images/sareru300px.png" width="300" height="300" alt="sarerubrand">
             </figure>
-            <span class="burger-button icon-menu"></span>
             <nav class="menu">
                 <ul>
                     <li>
@@ -104,13 +103,9 @@
         <script>
         
         function formUpt() {
-
             $('#form-sub').on('submit', function(e) {
-
                 e.preventDefault();
-
                 $.ajax({
-
                     method: "POST",
                     url: "form.php",
                     data: $('form').serialize(),
@@ -118,17 +113,11 @@
                         $('#registrationModal').modal('show');
                         return false;
                     }
-
                 });
-
                 return false;
-
             });
-
             return false;
-
         }
-
         $(document).ready(function() {
             formUpt();
         });
