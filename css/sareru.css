@@ -26,8 +26,8 @@ ul {
 }
 
 .contenedor {
-    width: 1200px;
-    margin: auto;
+    width: auto;
+    margin: 0 30px;
     position: relative;
 }
 
@@ -84,6 +84,7 @@ ul {
 
 .menu ul {
     display: inline-block;
+    padding-inline-start: 40px;
 }
 
 .logotipo {
@@ -191,36 +192,51 @@ ul {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
-    * {
-        border: 20px solid green;
-    }
+@media only screen and (max-width: 600px) {
+    
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: 600px) {
-    * {
-        border: 20px solid yellow;
-    }
+@media only screen and (min-width: 600px) {
+    
+    
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-    * {
-        border: 20px solid blue;
+@media only screen and (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
     }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-    * {
-        border: 20px solid black;
+@media only screen and (min-width: 992px) {
+    .menu {
+        display: block;
+    }
+    
+    .menu ul {
+        padding-inline-start: 15px;
+    }
+
+    .header {
+        justify-content: space-evenly;
     }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-    * {
-        border: 20px solid red;
+@media only screen and (min-width: 1200px) {
+    .menu ul {
+        padding-inline-start: 40px;
+    }
+
+    .header {
+        justify-content: space-evenly;
     }
 }
