@@ -267,6 +267,7 @@ ul {
     }
 
     .menu a {
+        font-size: 26px;
         line-height: 50px;
     }
 
@@ -290,6 +291,10 @@ ul {
     
     .menu {
         display: block;
+    }
+
+    .menu a {
+        font-size: 30px;
     }
     
     .menu ul {
