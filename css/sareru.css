@@ -78,8 +78,9 @@ ul {
     text-align: center;
     display: inline-block;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 20px;
+    top: 20px;
+    z-index: 3;
 }
 
 .contenedor {
@@ -257,9 +258,10 @@ ul {
     }
 
     .menu {
+        width: 100%;
         position: absolute;
         top: 0;
-        left: 0;
+        left: -100%;
         right: 0;
         bottom: 0;
         display: flex;
@@ -267,6 +269,11 @@ ul {
         text-align: center;
         z-index: 2;
         background: rgba(13, 62, 102, .7);
+        transition: .3s;
+    }
+
+    .menu.active {
+        left: 0;
     }
 
     .menu a {
