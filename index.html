@@ -37,8 +37,8 @@
             <figure class="logotipo">
                 <img src="images/sareru300px.png" width="300" height="300" alt="sarerubrand">
             </figure>
-            <span class="burger-button icon-menu"></span>
-            <nav class="menu">
+            <span class="burger-button icon-menu" id="burger-button"></span>
+            <nav class="menu" id="menu">
                 <ul>
                     <li>
                         <a href="index.html">¿Quiénes somos?</a>
@@ -192,6 +192,16 @@
             formUpt();
         });
         
+        </script>
+        <script>
+            var $burgerButton = document.getElementById('burger-button');
+            var $menu = document.getElementById('menu');
+
+            $burgerButton.addEventListener('touchstart', toogleMenu); 
+
+            function toogleMenu() {
+                $menu.classList.toggle('active')
+            };
         </script>  
 </body>
 </html>
