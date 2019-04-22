@@ -140,7 +140,7 @@ ul {
 
 .menu ul {
     display: inline-block;
-    padding-inline-start: 40px;
+    padding-inline-start: 0px;
 }
 
 .logotipo {
@@ -293,7 +293,7 @@ ul {
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     .contenedor { 
         margin: 0 30px;
     }
@@ -315,9 +315,13 @@ ul {
         line-height: 40px;
     }
 
+    .menu li {
+        display: inline-block;
+        padding-inline-start: 20px;
+    }
+
     .menu ul {
-        padding-inline-start: 0;
-        margin: 0 10px;
+        display: block;
     }
 
     .logotipo { 
@@ -347,13 +351,18 @@ ul {
         line-height: 50px;
     }
 
+    .menu li {
+        display: inline-block;
+        padding-inline-start: 55px;
+    }
+
     .menu ul {
         padding-inline-start: 0;
-        margin: 0 30px;
+        /*margin: 0 30px;*/
     }
 } 
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 1020px and up) */
 @media only screen and (min-width: 1020px) {
     .contenedor { 
         margin: 0 30px;
@@ -372,9 +381,13 @@ ul {
     .menu a {
         font-size: 30px;
     }
+
+    .menu li {
+        padding-inline-start: 14px;
+    }
     
     .menu ul {
-        padding-inline-start: 15px;
+        padding-inline-start: 0;
         margin: 0;
     }
 } 
@@ -385,8 +398,12 @@ ul {
         margin: 0 30px;
     }
 
+    .menu li {
+        padding-inline-start: 35px;
+    }
+
     .menu ul {
-        padding-inline-start: 40px;
+        padding-inline-start: 0;
     }
 
     .header {
