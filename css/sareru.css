@@ -252,6 +252,11 @@ ul {
         position: static;
         margin: 0;
     }
+
+    .formulario {
+        padding: 0px 5px;
+    }
+
     .header {
         position: static;
         text-align: center;
@@ -297,8 +302,12 @@ ul {
         display: block;
     }
 
+    .labelForm {
+        font-size: 40px;
+    }
+
     .portada {
-        padding: 5px 0px;
+        padding: 0px 5px;
     }
 
     .sub-titulo {
