@@ -1,4 +1,5 @@
 <?php
+require_once('app/class/class.connectiondb.php');
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -13,33 +14,43 @@ var_dump($tel);
 var_dump($email);
 var_dump($tipo);
 
-if($tipo=="comprador") {
-    try {
-        $conn = new PDO("mysql::host=$servername;dbname=clientes",$username,$password);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-        $sql = "INSERT INTO compradores(nombre, telefono, correo) 
-                VALUES ('$nombre', '$tel', '$email')";
-        $conn->exec($sql);
-        echo "registro correcto";
-    
-    } catch (\Throwable $th) {
-        echo "conexión incorrecta: " . $th->getMessage();
+$con = new ConnectionDB;
+
+if ($tipo == 'comprador') {
+
+    $data = array($nombre, $tel, $email);
+    $c = "INSERT INTO compradores(nombre, telefono, correo) VALUES (?,?,?)";
+    $q = $con->query($c, $data);
+
+    if (!$q) {
+        echo 'Fallo el registro';
+    } else {
+        echo 'Registro correcto';
     }
 
-}else {
-    try {
-        $conn = new PDO("mysql::host=$servername;dbname=clientes",$username,$password);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-        $sql = "INSERT INTO viajeros(nombre, telefono, correo) 
-                VALUES ('$nombre', '$tel', '$email')";
-        $conn->exec($sql);
-        echo "registro correcto";
-    
-    } catch (\Throwable $th) {
-        echo "conexión incorrecta: " . $th->getMessage();
+    $data = array($nombre, $tel, $email);
+    $c = "INSERT INTO compradores(nombre, telefono, correo) VALUES (?,?,?)";
+    $q = $con->query($c, $data);
+
+    if (!$q) {
+        echo 'Fallo el registro';
+    } else {
+        echo 'Registro correcto';
     }
+
+} else {
+
+    $data = array($nombre, $tel, $email);
+    $c = "INSERT INTO viajeros(nombre, telefono, correo) VALUES (?,?,?)";
+    $q = $con->query($c, $data);
+
+    if (!$q) {
+        echo 'Fallo el registro';
+    } else {
+        echo 'Registro correcto';
+    }
+
 }
-$conn = null;
+
+$con->close();
 ?>
