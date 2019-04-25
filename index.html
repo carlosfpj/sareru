@@ -72,27 +72,27 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" class="form-control" name="nombre" placeholder="Escribe tu nombre aquí">
+                    <input type="text" required class="form-control" name="nombre" placeholder="Escribe tu nombre aquí">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="tel">Número celular:</label>
-                    <input type="text" class="form-control" name="tel" placeholder="Escribe tu número celular aquí">
-                </div>    
+                    <input type="text" required class="form-control" name="tel" placeholder="Escribe tu número celular aquí">
+                </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="email">E-mail:</label>
-                    <input type="text" class="form-control" name="email" placeholder="Escribe tu e-mail aquí">
+                    <input type="email" required class="form-control" name="email" placeholder="Escribe tu e-mail aquí">
                 </div>
                 <div class="form-group col-md-6">
                         <label for="tipo">Elige qué deseas ser</label>
-                        <select name="tipo" class="form-control">
+                        <select name="tipo" required class="form-control">
                             <option value="viajero">Viajero</option>
                             <option value="comprador">Comprador</option>
                         </select>
                 </div>
-            </div> 
-            <button type="submit" class="btn btn-primary">Envíar</button>   
+            </div>
+            <button type="submit" class="btn btn-primary">Envíar</button>
         </form>
     </section>
     <section id="operacion" class="contenedor">
@@ -176,7 +176,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script>
-        
+
         function formUpt() {
             $('#form-sub').on('submit', function(e) {
                 e.preventDefault();
@@ -196,17 +196,17 @@
         $(document).ready(function() {
             formUpt();
         });
-        
+
         </script>
         <script>
             var $burgerButton = document.getElementById('burger-button');
             var $menu = document.getElementById('menu');
 
-            $burgerButton.addEventListener('touchstart', toogleMenu); 
+            $burgerButton.addEventListener('touchstart', toogleMenu);
 
             function toogleMenu() {
                 $menu.classList.toggle('active')
             };
-        </script>  
+        </script>
 </body>
 </html>

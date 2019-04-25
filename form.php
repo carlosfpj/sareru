@@ -1,8 +1,5 @@
 <?php
-require_once('app/class/class.connectiondb.php');
-$servername = "localhost";
-$username = "root";
-$password = "";
+require_once('class.connectiondb.php');
 
 $nombre = $_POST["nombre"];
 $tel = $_POST["tel"];
