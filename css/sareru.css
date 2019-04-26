@@ -459,7 +459,11 @@ ul {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .contenedor { 
-        margin: 0 30px;
+        margin: 0 10px;
+    }
+
+    .footer-social-icons-span {
+        justify-content: space-evenly;
     }
 
     .header {
@@ -480,7 +484,8 @@ ul {
 
     .menu li {
         display: inline-block;
-        padding-inline-start: 55px;
+        margin: 0 25px;
+        padding-inline-start: 0;
     }
 
     .menu ul {
@@ -492,7 +497,11 @@ ul {
 /* Large devices (laptops/desktops, 1020px and up) */
 @media only screen and (min-width: 1020px) {
     .contenedor { 
-        margin: 0 30px;
+        margin: 0 5px;
+    }
+
+    .footer-social-icons {
+        margin-left: 100px;
     }
 
     .header {
@@ -510,6 +519,7 @@ ul {
     }
 
     .menu li {
+        margin: 0;
         padding-inline-start: 14px;
     }
     
@@ -517,23 +527,37 @@ ul {
         padding-inline-start: 0;
         margin: 0;
     }
+
+    .sub-titulo {
+        font-size: 25px;
+    }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .contenedor { 
-        margin: 0 30px;
+        margin: 0 5px;
+    }
+
+    .footer-social-icons {
+        margin-left: 200px;
+    }
+
+    .header {
+        justify-content: space-evenly;
     }
 
     .menu li {
-        padding-inline-start: 35px;
+        padding-inline-start: 70px;
     }
 
     .menu ul {
         padding-inline-start: 0;
     }
 
-    .header {
-        justify-content: space-evenly;
+    .sub-titulo {
+        font-size: 30px;
     }
+
+    
 }
