@@ -376,8 +376,16 @@ ul {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) {
+    .burger-button {
+        display: none;
+    }
+
     .contenedor { 
-        margin: 0 15px;
+        margin: 0 10px;
+    }
+
+    .footer-social-icons {
+        margin-left: 0;
     }
 
     .header {
@@ -410,8 +418,36 @@ ul {
         margin: 0;
     }
 
+    .operacion {
+        padding: 15px 0;
+    }
+
     .portada {
         padding: 5px 0px;
+    }
+
+    .step1 {
+        width: auto;
+    }
+    
+    .step2 {
+        width: auto;
+    }
+    
+    .step3 {
+        width: auto;
+    }
+    
+    .step4 {
+        width: auto;
+    }
+
+    .step1-2 {
+        flex-direction: column;
+    }
+
+    .step3-4 {
+        flex-direction: column;
     }
 
     .titulo {
